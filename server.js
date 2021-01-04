@@ -14,7 +14,7 @@ var routes = require('./routes');
 routes(app);
 
 app.listen(port);
-console.log('Start Server on port : ' + port);
+console.log('Start Server V2 on port : ' + port);
 
 
 
