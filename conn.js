@@ -7,8 +7,10 @@ var conn = mysql.createConnection({
 });
 
 conn.connect(function(err){
-    if(err)
-    throw err;
+    if(!err)
+    console.log('Database is connected!');
+    else
+    console.log('Database not connected! : '+ JSON.stringify(err, undefined,2));
 });
 
 module.exports = conn;
